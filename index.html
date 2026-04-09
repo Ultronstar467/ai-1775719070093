@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Web Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>FastAPI Web Calculator</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section class="calculator-section">
+            <h2>Perform Basic Calculations</h2>
+            <div class="calculator-grid">
+                <input type="number" id="num1" placeholder="First Number" aria-label="First Number">
+                <select id="operator" aria-label="Operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="number" id="num2" placeholder="Second Number" aria-label="Second Number">
+                <button id="calculateBtn">Calculate</button>
+            </div>
+            <div class="result-display">
+                <p>Result: <span id="result"></span></p>
+                <p id="error" class="error-message"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 FastAPI Calculator. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
